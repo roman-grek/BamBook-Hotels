@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountChangePhoto" xml:space="preserve">
+    <value>Изменить фото профиля</value>
+  </data>
+  <data name="AccountChoosePhotoGallery" xml:space="preserve">
+    <value>Выбрать из галереи</value>
+  </data>
+  <data name="AccountChoosePhotoTake" xml:space="preserve">
+    <value>Сделать фото</value>
+  </data>
+  <data name="AccountChoosePhotoTitle" xml:space="preserve">
+    <value>Выбор фото</value>
+  </data>
+  <data name="AccountLeave" xml:space="preserve">
+    <value>Выйти из аккаунта</value>
+  </data>
+  <data name="BookHotel" xml:space="preserve">
+    <value>Забронировать отель</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="DarkMode" xml:space="preserve">
+    <value>Темная тема</value>
+  </data>
+  <data name="FavoritesHeader" xml:space="preserve">
+    <value>Отели, добавленные в избранное</value>
+  </data>
+  <data name="FilterNone" xml:space="preserve">
+    <value>Без фильтров</value>
+  </data>
+  <data name="FilterRating" xml:space="preserve">
+    <value>Рейтинг выше 8</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+    <value>Фильтры</value>
+  </data>
+  <data name="FilterStars" xml:space="preserve">
+    <value>Больше 3 звезд</value>
+  </data>
+  <data name="FiltersTitle" xml:space="preserve">
+    <value>Выберите фильтр</value>
+  </data>
+  <data name="HotelInfoHeader" xml:space="preserve">
+    <value>Информация об отеле</value>
+  </data>
+  <data name="HotelsList" xml:space="preserve">
+    <value>Список отелей</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="LoginButton" xml:space="preserve">
+    <value>Войти в аккаунт</value>
+  </data>
+  <data name="LoginEmail" xml:space="preserve">
+    <value>Электронная почта:</value>
+  </data>
+  <data name="LoginErrorText" xml:space="preserve">
+    <value>Аккаунт не найден. Проверьте введенные данные</value>
+  </data>
+  <data name="LoginErrorTitle" xml:space="preserve">
+    <value>Невозможно войти в аккаунт</value>
+  </data>
+  <data name="LoginPassword" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>Вход в аккаунт</value>
+  </data>
+  <data name="RegisterButton" xml:space="preserve">
+    <value>Зарегистрироваться</value>
+  </data>
+  <data name="RegisterCreateAccount" xml:space="preserve">
+    <value>Создать аккаунт</value>
+  </data>
+  <data name="RegisterCreateErrorText" xml:space="preserve">
+    <value>Введенные данные некорректны</value>
+  </data>
+  <data name="RegisterCreateErrorTitle" xml:space="preserve">
+    <value>Невозможно создать аккаунт</value>
+  </data>
+  <data name="RegisterEmailErrorText" xml:space="preserve">
+    <value>Проверьте адрес электронной почты и соединение с интернетом</value>
+  </data>
+  <data name="RegisterEmailErrorTitle" xml:space="preserve">
+    <value>Сбой проверки электронной почты</value>
+  </data>
+  <data name="RegisterName" xml:space="preserve">
+    <value>Имя пользователя:</value>
+  </data>
+  <data name="RegisterPasswordErrorText" xml:space="preserve">
+    <value>Пароли не совпадают</value>
+  </data>
+  <data name="RegisterPasswordErrorTitle" xml:space="preserve">
+    <value>Повторите пароль</value>
+  </data>
+  <data name="RegisterRepeatPassword" xml:space="preserve">
+    <value>Повторите пароль:</value>
+  </data>
+  <data name="RegisterTitle" xml:space="preserve">
+    <value>Создать новый аккаунт</value>
+  </data>
+  <data name="SearchAccountButtonChange" xml:space="preserve">
+    <value>Сменить аккаунт</value>
+  </data>
+  <data name="SearchAdults" xml:space="preserve">
+    <value>Взрослые</value>
+  </data>
+  <data name="SearchBarPlaceholder" xml:space="preserve">
+    <value>Город...</value>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="SearchChildren" xml:space="preserve">
+    <value>Дети</value>
+  </data>
+  <data name="SearchDateFrom" xml:space="preserve">
+    <value>Дата отъезда</value>
+  </data>
+  <data name="SearchDateTo" xml:space="preserve">
+    <value>Дата заезда</value>
+  </data>
+  <data name="SearchDetailTitle" xml:space="preserve">
+    <value>Поиск отелей</value>
+  </data>
+  <data name="SearchExamples" xml:space="preserve">
+    <value>Наши направления</value>
+  </data>
+  <data name="SearchMenuAccount" xml:space="preserve">
+    <value>Об аккаунте</value>
+  </data>
+  <data name="SearchMenuBooking" xml:space="preserve">
+    <value>Текущее бронирование</value>
+  </data>
+  <data name="SearchMenuFavorites" xml:space="preserve">
+    <value>Любимые отели</value>
+  </data>
+  <data name="SearchMenuMain" xml:space="preserve">
+    <value>Поиск отелей</value>
+  </data>
+  <data name="SearchMenuSettings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="SearchResult" xml:space="preserve">
+    <value>Результат поиска</value>
+  </data>
+  <data name="Sorting" xml:space="preserve">
+    <value>Сортировка</value>
+  </data>
+  <data name="SortingName" xml:space="preserve">
+    <value>По названию</value>
+  </data>
+  <data name="SortingRating" xml:space="preserve">
+    <value>По рейтингу</value>
+  </data>
+  <data name="SortingStars" xml:space="preserve">
+    <value>По звездам</value>
+  </data>
+</root>

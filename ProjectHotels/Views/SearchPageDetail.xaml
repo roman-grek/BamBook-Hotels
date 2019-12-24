@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProjectHotels.Views.SearchPageDetail"
+             Title="{Binding Resources[SearchDetailTitle]}"
+             Style="{DynamicResource pageStyle}">
+    <ScrollView x:Name="searchScroll">
+        <StackLayout Padding="10">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
+                <ImageButton x:Name="accountBtn" HeightRequest="50" Source="{Binding AccountButtonImage}"
+                             Command="{Binding EnterAccountCommand}"/>
+                <Label x:Name="accountLabel" Text="{Binding AccountButtonText}" Style="{DynamicResource labelStyle}"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <SearchBar x:Name="searchCity" Placeholder="{Binding Resources[SearchBarPlaceholder]}" Style="{DynamicResource searchBarStyle}" />
+                <Label Text="{Binding Resources[SearchDateTo]}" Style="{DynamicResource labelStyle}"/>
+                <DatePicker x:Name="searchDateTo" Format="D"/>
+                <Label Text="{Binding Resources[SearchDateFrom]}" Style="{DynamicResource labelStyle}"/>
+                <DatePicker x:Name="searchDateFrom" Format="D"/>
+                <Grid BackgroundColor="LightGreen">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="{Binding Resources[SearchAdults]}" HorizontalOptions="Center" Style="{DynamicResource labelStyle}" BackgroundColor="LightGreen"/>
+                    <Label Grid.Column="1" Text="{Binding Resources[SearchChildren]}" HorizontalOptions="Center" Style="{DynamicResource labelStyle}" BackgroundColor="LightGreen"/>
+                    <Label Grid.Row="1" HorizontalOptions="Center" Style="{DynamicResource labelStyle}" BindingContext="{x:Reference Name=searchAdults}" Text="{Binding Path=Value}"/>
+                    <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" Style="{DynamicResource labelStyle}" BindingContext="{x:Reference Name=searchChildren}" Text="{Binding Path=Value}"/>
+                    <Stepper x:Name="searchAdults" Grid.Row="2" Maximum="20" Minimum="1" Value="1" HeightRequest="40" BackgroundColor="LightGreen"/>
+                    <Stepper x:Name="searchChildren" Grid.Row="2" Grid.Column="1" Maximum="20" Minimum="0" Value="0" HeightRequest="40" BackgroundColor="LightGreen"/>
+                </Grid>
+                <Button x:Name="searchBtn" Text="{Binding Resources[SearchButton]}"
+                        Style="{DynamicResource buttonStyle}" Clicked="searchBtnClicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

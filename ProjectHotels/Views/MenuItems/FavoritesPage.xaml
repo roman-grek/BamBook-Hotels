@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProjectHotels.Views.MenuItems.FavoritesPage"
+             Style="{DynamicResource pageStyle}">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding Hotels}">
+                <ListView.Header>
+                    <Label Text="{Binding Resources[FavoritesHeader]}" Style="{DynamicResource labelStyle}" FontSize="Large"/>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="350">
+                            <ViewCell.View>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="{Binding Picture1}" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand"/>
+                                    <Label Text="{Binding Name}" Style="{DynamicResource labelStyle}" Grid.Column="1" HorizontalOptions="End"/>
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

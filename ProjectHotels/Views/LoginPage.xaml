@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProjectHotels.Views.LoginPage"
+             Title="{Binding Resources[LoginTitle]}"
+             Style="{DynamicResource pageStyle}">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Label Text="{Binding Resources[LoginEmail]}" Style="{DynamicResource labelStyle}"/>
+            <Entry x:Name="emailEntry" Text="{Binding Email}" Style="{DynamicResource entryStyle}"/>
+            <Label Text="{Binding Resources[LoginPassword]}" Style="{DynamicResource labelStyle}"/>
+            <Entry x:Name="passwordEntry" IsPassword="True" Text="{Binding Password}" Style="{DynamicResource entryStyle}"/>
+            <Button x:Name="loginButton" Text="{Binding Resources[LoginButton]}" Style="{DynamicResource buttonStyle}"
+                    Command="{Binding ListViewModel.LoginCommand}" CommandParameter="{Binding}"/>
+            <Button x:Name="registerButton" Text="{Binding Resources[RegisterButton]}" Style="{DynamicResource buttonStyle}"
+                    Command="{Binding ListViewModel.CreateAccountCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

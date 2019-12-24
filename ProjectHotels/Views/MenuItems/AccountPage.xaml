@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProjectHotels.Views.MenuItems.AccountPage"
+             Style="{DynamicResource pageStyle}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="accountImage" Source="{Binding Image}" VerticalOptions="Start" HorizontalOptions="Center"
+                   HeightRequest="150" WidthRequest="150">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Button x:Name="changeButton" Text="{Binding Resources[AccountChangePhoto]}" Clicked="OnImageButton_Clicked"
+                    Style="{DynamicResource buttonStyle}" VerticalOptions="Start"/>
+            <Grid x:Name="gridAccount">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="{Binding Resources[RegisterName]}" Style="{DynamicResource labelStyle}" FontSize="Medium"/>
+                <Label Grid.Column="1" Text="{Binding Name}" Style="{DynamicResource labelStyle}" FontSize="Large"/>
+                <Label Grid.Row="1" Text="E-mail:" Style="{DynamicResource labelStyle}" FontSize="Medium"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Email}" Style="{DynamicResource labelStyle}" FontSize="Large"/>
+            </Grid>
+            <Button x:Name="leaveButton" Text="{Binding Resources[AccountLeave]}" Clicked="LeaveButton_Clicked" VerticalOptions="End"
+                    BackgroundColor="Red" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

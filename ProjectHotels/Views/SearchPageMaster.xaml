@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProjectHotels.Views.SearchPageMaster"
+             Title="Bambook Hotels"
+             Style="{DynamicResource pageStyle}">
+    <StackLayout>
+        <ListView x:Name="MenuItemsListView"
+              SeparatorVisibility="Default"
+              HasUnevenRows="true"
+              x:FieldModifier="public">
+            <ListView.Header>
+                <Label BackgroundColor="ForestGreen" HeightRequest="70" Text="BamBook Hotels" Style="{DynamicResource labelStyle}"
+                       TextColor="White" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}"/>
+                            <Label Grid.Column="1" Text="{Binding Title}" Style="{DynamicResource labelStyle}"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.Footer>
+                <Label Text="© Roman Grek 2019" HorizontalOptions="Center" VerticalOptions="End"/>
+            </ListView.Footer>
+        </ListView>
+    </StackLayout>
+</ContentPage>

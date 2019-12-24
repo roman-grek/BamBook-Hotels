@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProjectHotels.Views.HotelPage"
+             Title="{Binding Resources[HotelInfoHeader]}"
+             Style="{DynamicResource pageStyle}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid x:Name="hotelPhotos" HeightRequest="250">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image Source="{Binding Picture1}"/>
+                <Image Source="{Binding Picture2}" Grid.Column="1"/>
+                <Image Source="{Binding Picture3}" Grid.Row="1"/>
+                <Image Source="{Binding Picture4}" Grid.Column="1" Grid.Row="1"/>
+            </Grid>
+            <Label Text="{Binding Name}" Style="{DynamicResource labelStyle}" FontSize="Title"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image Source="{Binding Stars}"/>
+                <Label Grid.Column="1" Text="{Binding RatingString}" Style="{DynamicResource labelStyle}"/>
+            </Grid>
+            <Label Text="{Binding Address}" Style="{DynamicResource labelStyle}" FontSize="Small"/>
+            <StackLayout Orientation="Horizontal">
+                <ImageButton Source="{Binding WaypointPicture}" Command="{Binding ShowOnMapCommand}" 
+                             Style="{DynamicResource imageButtonStyle}"/>
+                <ImageButton Source="{Binding FavoritePicture}" Command="{Binding ChangeFavoritesCommand}"
+                    Style="{DynamicResource imageButtonStyle}" WidthRequest="64" HeightRequest="64"
+                             HorizontalOptions="End"/>
+            </StackLayout>
+            <Label Text="{Binding ListViewModel.Dates}" Style="{DynamicResource labelStyle}" />
+            <Label Text="{Binding ListViewModel.People}" Style="{DynamicResource labelStyle}" />
+            <Button Text="{Binding Resources[BookHotel]}" Style="{DynamicResource buttonStyle}"
+                    Command="{Binding BookHotelCommand}" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

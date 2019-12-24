@@ -1,0 +1,279 @@
+var hotels = new List<Hotel>() {
+            new Hotel
+            {
+                Name = "Campanile Shanghai Bund Hotel",
+                City = "Шанхай",
+                Stars = 3,
+                Rating = 8.7,
+                Address = "No. 33 Fujian South Road Huangpu District, Хуанпу, 200002 Шанхай, Китай",
+                Picture1 = "https://q-cf.bstatic.com/images/hotel/max1024x768/795/79502532.jpg",
+                Picture2 = "https://q-cf.bstatic.com/images/hotel/max1024x768/795/79502472.jpg",
+                Picture3 = "https://q-cf.bstatic.com/images/hotel/max1024x768/795/79502534.jpg",
+                Picture4 = "https://q-cf.bstatic.com/images/hotel/max1024x768/794/79432035.jpg"
+            },
+            new Hotel
+            {
+                Name = "The Drama",
+                City = "Шанхай",
+                Stars = 4,
+                Rating = 8.9,
+                Address = "South Building, Shangyan Valley, No.1013 West Beijing Road , Цзинъань, 200003 Шанхай, Китай",
+                Picture1 = "https://q-cf.bstatic.com/images/hotel/max1024x768/195/195897144.jpg",
+                Picture2 = "https://r-cf.bstatic.com/images/hotel/max1024x768/195/195896995.jpg",
+                Picture3 = "https://q-cf.bstatic.com/images/hotel/max1024x768/195/195896877.jpg",
+                Picture4 = "https://r-cf.bstatic.com/images/hotel/max1024x768/924/92423986.jpg"
+            },
+            new Hotel
+            {
+                Name = "New World Shanghai Hotel",
+                City = "Шанхай",
+                Stars = 5,
+                Rating = 8.6,
+                Address = "No.1555 Dingxi Road, Чаннин, 200050 Шанхай, Китай",
+                Picture1 = "https://r-cf.bstatic.com/images/hotel/max1024x768/122/122570804.jpg",
+                Picture2 = "https://r-cf.bstatic.com/images/hotel/max1024x768/586/58637733.jpg",
+                Picture3 = "https://q-cf.bstatic.com/images/hotel/max1024x768/586/58637297.jpg",
+                Picture4 = "https://q-cf.bstatic.com/images/hotel/max1024x768/586/58637736.jpg"
+
+            },
+            new Hotel
+            {
+                Name = "Seventh Heaven Hotel",
+                City = "Шанхай",
+                Stars = 3,
+                Rating = 7.4,
+                Address = "No.627,East Nanjing Road, Хуанпу, 200001 Шанхай, Китай ",
+                Picture1 = "https://q-cf.bstatic.com/images/hotel/max1024x768/199/199394168.jpg",
+                Picture2 = "https://q-cf.bstatic.com/images/hotel/max1024x768/199/199602599.jpg",
+                Picture3 = "https://r-cf.bstatic.com/images/hotel/max1024x768/199/199394204.jpg",
+                Picture4 = "https://r-cf.bstatic.com/images/hotel/max1024x768/199/199394228.jpg"
+            },
+            new Hotel
+            {
+                Name = "Ji Hotel (Shanghai The Bund Jinling East Road)",
+                City = "Шанхай",
+                Stars = 5,
+                Rating = 7.3,
+                Address = "Floor 1-4, No.33, South Henan Road, Huangpu District, Хуанпу, 200002 Шанхай, Китай",
+                Picture1 = "https://q-cf.bstatic.com/images/hotel/max1024x768/200/200957025.jpg",
+                Picture2 = "https://r-cf.bstatic.com/images/hotel/max1024x768/203/203462592.jpg",
+                Picture3 = "https://q-cf.bstatic.com/images/hotel/max1024x768/203/203462312.jpg",
+                Picture4 = "https://q-cf.bstatic.com/images/hotel/max1024x768/203/203462599.jpg"
+            },
+            new Hotel
+            {
+                Name = "The Strings by InterContinental",
+                City = "Токио",
+                Stars = 5,
+                Rating = 9.0,
+                Address = "108-8282 Токио, Minato-ku, Konan 2-16-1 Shinagawa East One Tower 26-32 Floor, Япония",
+                Picture1 = "https://r-cf.bstatic.com/images/hotel/max1024x768/233/233973712.jpg",
+                Picture2 = "https://r-cf.bstatic.com/images/hotel/max1024x768/230/230308214.jpg",
+                Picture3 = "https://r-cf.bstatic.com/images/hotel/max1024x768/230/230308591.jpg",
+                Picture4 = "https://r-cf.bstatic.com/images/hotel/max1024x768/230/230309030.jpg"
+            },
+            new Hotel
+            {
+                Name = "Mustard Hotel Shibuya",
+                City = "Токио",
+                Stars = 3,
+                Rating = 8.2,
+                Address = "150-0011 Токио, Shibuya-ku Higashi 1-29-3 SHIBUYA BRIDGE B, Япония",
+                Picture1 = "https://q-cf.bstatic.com/images/hotel/max1024x768/174/174952261.jpg",
+                Picture2 = "https://r-cf.bstatic.com/images/hotel/max1024x768/185/185031389.jpg",
+                Picture3 = "https://r-cf.bstatic.com/images/hotel/max1024x768/161/161616464.jpg",
+                Picture4 = "https://r-cf.bstatic.com/images/hotel/max1024x768/162/162057638.jpg"
+            },
+            new Hotel
+            {
+                Name = "Guest House TRACE",
+                City = "Токио",
+                Stars = 2,
+                Rating = 7.2,
+                Address = "103-0004 Токио, Higashi-Nihonbashi 2-25-4 , Япония",
+                Picture1 = "https://r-cf.bstatic.com/images/hotel/max1024x768/105/105573834.jpg",
+                Picture2 = "https://r-cf.bstatic.com/images/hotel/max1024x768/117/117176903.jpg",
+                Picture3 = "https://r-cf.bstatic.com/images/hotel/max1024x768/117/117176797.jpg",
+                Picture4 = "https://r-cf.bstatic.com/images/hotel/max1024x768/122/122813966.jpg"
+            },
+            new Hotel
+            {
+                Name = "Hotel Maluri",
+                City = "Куала-Лумпур",
+                Stars = 3,
+                Rating = 7.9,
+                Address = "No.1, Jalan Permaisuri Taman Maluri, Cheras, 55100 Куала-Лумпур, Малайзия",
+                Picture1 = "https://r-cf.bstatic.com/images/hotel/max1024x768/175/175962635.jpg",
+                Picture2 = "https://r-cf.bstatic.com/images/hotel/max1024x768/176/176114530.jpg",
+                Picture3 = "https://q-cf.bstatic.com/images/hotel/max1024x768/175/175974780.jpg",
+                Picture4 = "https://q-cf.bstatic.com/images/hotel/max1024x768/176/176113817.jpg"
+            },
+            new Hotel
+            {
+                Name = "Smart Boutique Hotel",
+                City = "Куала-Лумпур",
+                Stars = 3,
+                Rating = 6.6,
+                Address = "451 Seksyen 41, Jalan Tuanku Abdul Rahman,, Чоу-Кит, 50100 Куала-Лумпур, Малайзия",
+                Picture1 = "https://r-cf.bstatic.com/images/hotel/max1024x768/151/151148504.jpg",
+                Picture2 = "https://q-cf.bstatic.com/images/hotel/max1024x768/151/151161620.jpg",
+                Picture3 = "https://q-cf.bstatic.com/images/hotel/max1024x768/151/151150126.jpg",
+                Picture4 = "https://q-cf.bstatic.com/images/hotel/max1024x768/151/151156018.jpg"
+            },
+            new Hotel
+            {
+                Name = "Regal Airport Hotel",
+                City = "Гонконг",
+                Stars = 5,
+                Rating = 8.1,
+                Address = "9 Cheong Tat Road, Гонконг, Гонконг",
+                Picture1 = "https://r-cf.bstatic.com/images/hotel/max1024x768/832/83288826.jpg",
+                Picture2 = "https://q-cf.bstatic.com/images/hotel/max1024x768/220/220976583.jpg",
+                Picture3 = "https://q-cf.bstatic.com/images/hotel/max1024x768/220/220973049.jpg",
+                Picture4 = "https://r-cf.bstatic.com/images/hotel/max1024x768/203/203531087.jpg"
+            },
+            new Hotel
+            {
+                Name = "Philippines Manila Hostel",
+                City = "Гонконг",
+                Stars = 1,
+                Rating = 8.5,
+                Address = "Flat F2, 3/F, Mirador Mansion, 58 Nathan Road, Tsim Sha Tsui, Kowloon, Яучимвон, Гонконг, Гонконг",
+                Picture1 = "https://r-cf.bstatic.com/images/hotel/max1024x768/219/219678022.jpg",
+                Picture2 = "https://q-cf.bstatic.com/images/hotel/max1024x768/226/226518024.jpg",
+                Picture3 = "https://r-cf.bstatic.com/images/hotel/max1024x768/226/226518768.jpg",
+                Picture4 = "https://r-cf.bstatic.com/images/hotel/max1024x768/219/219763388.jpg"
+            },
+            };
+            foreach(var hotel in hotels)
+                Database.SaveHotel(hotel);
+
+Name = "Hua Ting Hotel and Towers",
+                City = "Шанхай",
+                Stars = 5,
+                Rating = 7.3,
+                Address = "1200 Caoxi Road North., Сюйхуэй, 200030 Шанхай, Китай",
+                Picture1 = "https://r-cf.bstatic.com/images/hotel/max1024x768/168/16842967.jpg",
+                Picture2 = "https://r-cf.bstatic.com/images/hotel/max1024x768/197/197986185.jpg",
+                Picture3 = "https://r-cf.bstatic.com/images/hotel/max1024x768/186/18685150.jpg",
+                Picture4 = "https://q-cf.bstatic.com/images/hotel/max1024x768/179/179435403.jpg"
+
+Name = "Campanile Shanghai Bund Hotel",
+                City = "Шанхай",
+                Stars = 3,
+                Rating = 8.7,
+                Address = "No. 33 Fujian South Road Huangpu District, Хуанпу, 200002 Шанхай, Китай",
+                Picture1 = "https://q-cf.bstatic.com/images/hotel/max1024x768/795/79502532.jpg",
+                Picture2 = "https://q-cf.bstatic.com/images/hotel/max1024x768/795/79502472.jpg",
+                Picture3 = "https://q-cf.bstatic.com/images/hotel/max1024x768/795/79502534.jpg",
+                Picture4 = "https://q-cf.bstatic.com/images/hotel/max1024x768/794/79432035.jpg"
+
+Name = "The Drama",
+                City = "Шанхай",
+                Stars = 4,
+                Rating = 8.9,
+                Address = "South Building, Shangyan Valley, No.1013 West Beijing Road , Цзинъань, 200003 Шанхай, Китай",
+                Picture1 = "https://q-cf.bstatic.com/images/hotel/max1024x768/195/195897144.jpg",
+                Picture2 = "https://r-cf.bstatic.com/images/hotel/max1024x768/195/195896995.jpg",
+                Picture3 = "https://q-cf.bstatic.com/images/hotel/max1024x768/195/195896877.jpg",
+                Picture4 = "https://r-cf.bstatic.com/images/hotel/max1024x768/924/92423986.jpg"
+
+Name = "New World Shanghai Hotel",
+                City = "Шанхай",
+                Stars = 5,
+                Rating = 8.6,
+                Address = "No.1555 Dingxi Road, Чаннин, 200050 Шанхай, Китай",
+                Picture1 = "https://r-cf.bstatic.com/images/hotel/max1024x768/122/122570804.jpg",
+                Picture2 = "https://r-cf.bstatic.com/images/hotel/max1024x768/586/58637733.jpg",
+                Picture3 = "https://q-cf.bstatic.com/images/hotel/max1024x768/586/58637297.jpg",
+                Picture4 = "https://q-cf.bstatic.com/images/hotel/max1024x768/586/58637736.jpg"
+
+Name = "Seventh Heaven Hotel",
+                City = "Шанхай",
+                Stars = 3,
+                Rating = 7.4,
+                Address = "No.627,East Nanjing Road, Хуанпу, 200001 Шанхай, Китай ",
+                Picture1 = "https://q-cf.bstatic.com/images/hotel/max1024x768/199/199394168.jpg",
+                Picture2 = "https://q-cf.bstatic.com/images/hotel/max1024x768/199/199602599.jpg",
+                Picture3 = "https://r-cf.bstatic.com/images/hotel/max1024x768/199/199394204.jpg",
+                Picture4 = "https://r-cf.bstatic.com/images/hotel/max1024x768/199/199394228.jpg"
+
+Name = "Ji Hotel (Shanghai The Bund Jinling East Road)",
+                City = "Шанхай",
+                Stars = 5,
+                Rating = 7.3,
+                Address = "Floor 1-4, No.33, South Henan Road, Huangpu District, Хуанпу, 200002 Шанхай, Китай",
+                Picture1 = "https://q-cf.bstatic.com/images/hotel/max1024x768/200/200957025.jpg",
+                Picture2 = "https://r-cf.bstatic.com/images/hotel/max1024x768/203/203462592.jpg",
+                Picture3 = "https://q-cf.bstatic.com/images/hotel/max1024x768/203/203462312.jpg",
+                Picture4 = "https://q-cf.bstatic.com/images/hotel/max1024x768/203/203462599.jpg"
+
+Name = "The Strings by InterContinental",
+                City = "Токио",
+                Stars = 5,
+                Rating = 9.0,
+                Address = "108-8282 Токио, Minato-ku, Konan 2-16-1 Shinagawa East One Tower 26-32 Floor, Япония",
+                Picture1 = "https://r-cf.bstatic.com/images/hotel/max1024x768/233/233973712.jpg",
+                Picture2 = "https://r-cf.bstatic.com/images/hotel/max1024x768/230/230308214.jpg",
+                Picture3 = "https://r-cf.bstatic.com/images/hotel/max1024x768/230/230308591.jpg",
+                Picture4 = "https://r-cf.bstatic.com/images/hotel/max1024x768/230/230309030.jpg"
+
+Name = "Mustard Hotel Shibuya",
+                City = "Токио",
+                Stars = 3,
+                Rating = 8.2,
+                Address = "150-0011 Токио, Shibuya-ku Higashi 1-29-3 SHIBUYA BRIDGE B, Япония",
+                Picture1 = "https://q-cf.bstatic.com/images/hotel/max1024x768/174/174952261.jpg",
+                Picture2 = "https://r-cf.bstatic.com/images/hotel/max1024x768/185/185031389.jpg",
+                Picture3 = "https://r-cf.bstatic.com/images/hotel/max1024x768/161/161616464.jpg",
+                Picture4 = "https://r-cf.bstatic.com/images/hotel/max1024x768/162/162057638.jpg"
+
+Name = "Guest House TRACE",
+                City = "Токио",
+                Stars = 2,
+                Rating = 7.2,
+                Address = "103-0004 Токио, Higashi-Nihonbashi 2-25-4 , Япония",
+                Picture1 = "https://r-cf.bstatic.com/images/hotel/max1024x768/105/105573834.jpg",
+                Picture2 = "https://r-cf.bstatic.com/images/hotel/max1024x768/117/117176903.jpg",
+                Picture3 = "https://r-cf.bstatic.com/images/hotel/max1024x768/117/117176797.jpg",
+                Picture4 = "https://r-cf.bstatic.com/images/hotel/max1024x768/122/122813966.jpg"
+
+Name = "Hotel Maluri",
+                City = "Куала-Лумпур",
+                Stars = 3,
+                Rating = 7.9,
+                Address = "No.1, Jalan Permaisuri Taman Maluri, Cheras, 55100 Куала-Лумпур, Малайзия",
+                Picture1 = "https://r-cf.bstatic.com/images/hotel/max1024x768/175/175962635.jpg",
+                Picture2 = "https://r-cf.bstatic.com/images/hotel/max1024x768/176/176114530.jpg",
+                Picture3 = "https://q-cf.bstatic.com/images/hotel/max1024x768/175/175974780.jpg",
+                Picture4 = "https://q-cf.bstatic.com/images/hotel/max1024x768/176/176113817.jpg"
+
+Name = "Smart Boutique Hotel",
+                City = "Куала-Лумпур",
+                Stars = 3,
+                Rating = 6.6,
+                Address = "451 Seksyen 41, Jalan Tuanku Abdul Rahman,, Чоу-Кит, 50100 Куала-Лумпур, Малайзия",
+                Picture1 = "https://r-cf.bstatic.com/images/hotel/max1024x768/151/151148504.jpg",
+                Picture2 = "https://q-cf.bstatic.com/images/hotel/max1024x768/151/151161620.jpg",
+                Picture3 = "https://q-cf.bstatic.com/images/hotel/max1024x768/151/151150126.jpg",
+                Picture4 = "https://q-cf.bstatic.com/images/hotel/max1024x768/151/151156018.jpg"
+
+Name = "Regal Airport Hotel",
+                City = "Гонконг",
+                Stars = 5,
+                Rating = 8.1,
+                Address = "9 Cheong Tat Road, Гонконг, Гонконг",
+                Picture1 = "https://r-cf.bstatic.com/images/hotel/max1024x768/832/83288826.jpg",
+                Picture2 = "https://q-cf.bstatic.com/images/hotel/max1024x768/220/220976583.jpg",
+                Picture3 = "https://q-cf.bstatic.com/images/hotel/max1024x768/220/220973049.jpg",
+                Picture4 = "https://r-cf.bstatic.com/images/hotel/max1024x768/203/203531087.jpg"
+
+Name = "Philippines Manila Hostel",
+                City = "Гонконг",
+                Stars = 1,
+                Rating = 8.5,
+                Address = "Flat F2, 3/F, Mirador Mansion, 58 Nathan Road, Tsim Sha Tsui, Kowloon, Яучимвон, Гонконг, Гонконг",
+                Picture1 = "https://r-cf.bstatic.com/images/hotel/max1024x768/219/219678022.jpg",
+                Picture2 = "https://q-cf.bstatic.com/images/hotel/max1024x768/226/226518024.jpg",
+                Picture3 = "https://r-cf.bstatic.com/images/hotel/max1024x768/226/226518768.jpg",
+                Picture4 = "https://r-cf.bstatic.com/images/hotel/max1024x768/219/219763388.jpg"

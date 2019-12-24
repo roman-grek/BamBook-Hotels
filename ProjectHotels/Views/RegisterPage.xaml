@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProjectHotels.Views.RegisterPage"
+             Title="{Binding Resources[RegisterTitle]}"
+             Style="{DynamicResource pageStyle}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding Resources[RegisterName]}" Style="{DynamicResource labelStyle}"/>
+            <Entry x:Name="nameEntry" Text="{Binding Name}" Style="{DynamicResource entryStyle}"/>
+            <Label Text="{Binding Resources[LoginEmail]}" Style="{DynamicResource labelStyle}"/>
+            <Entry x:Name="emailEntry" Text="{Binding Email}" Style="{DynamicResource entryStyle}"/>
+            <Label Text="{Binding Resources[LoginPassword]}" Style="{DynamicResource labelStyle}"/>
+            <Entry x:Name="passwordEntry" IsPassword="True" Text="{Binding Password}" Style="{DynamicResource entryStyle}"/>
+            <Label Text="{Binding Resources[RegisterRepeatPassword]}" Style="{DynamicResource labelStyle}"/>
+            <Entry x:Name="passwordRepeatEntry" IsPassword="True" Completed="PasswordRepeatEntry_Completed" Style="{DynamicResource entryStyle}"/>
+            <Button x:Name="registerButton" Text="{Binding Resources[RegisterButton]}" Command="{Binding ListViewModel.RegisterCommand}"
+                    CommandParameter="{Binding}" Style="{DynamicResource buttonStyle}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

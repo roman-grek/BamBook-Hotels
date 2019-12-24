@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProjectHotels.App">
+    <Application.Resources>
+        <Style x:Key="buttonLight" TargetType="Button">
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="BackgroundColor" Value="LawnGreen"/>
+            <Setter Property="BorderColor" Value="YellowGreen"/>
+            <Setter Property="BorderWidth" Value="2"/>
+            <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+        </Style>
+        <Style x:Key="buttonDark" TargetType="Button">
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="BackgroundColor" Value="DarkGreen"/>
+            <Setter Property="BorderColor" Value="YellowGreen"/>
+            <Setter Property="BorderWidth" Value="2"/>
+            <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+        <Style x:Key="labelLight" TargetType="Label">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+        </Style>
+        <Style x:Key="labelDark" TargetType="Label">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="BackgroundColor" Value="LightGreen"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+        </Style>
+        <Style x:Key="pageLight" TargetType="Page">
+            <Setter Property="BackgroundColor" Value="White"/>
+        </Style>
+        <Style x:Key="pageDark" TargetType="Page">
+            <Setter Property="BackgroundColor" Value="DarkGreen"/>
+        </Style>
+        <Style x:Key="entryLight" TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="LightGreen"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+        </Style>
+        <Style x:Key="entryDark" TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="DarkSeaGreen"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+        </Style>
+        <Style x:Key="imageButtonLight" TargetType="ImageButton">
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+        <Style x:Key="imageButtonDark" TargetType="ImageButton">
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+        <Style x:Key="searchBarLight" TargetType="SearchBar">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+        <Style x:Key="searchBarDark" TargetType="SearchBar">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="BackgroundColor" Value="LightGreen"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+    </Application.Resources>
+</Application>

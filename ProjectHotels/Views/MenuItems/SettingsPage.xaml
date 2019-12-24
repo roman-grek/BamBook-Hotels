@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProjectHotels.Views.MenuItems.SettingsPage">
+    <ContentPage.Content>
+        <TableView Intent="Settings">
+            <TableRoot>
+                <TableSection Title="{Binding Resources[Language]}" TextColor="Black">
+                    <ViewCell>
+                        <Picker Title="{Binding Resources[Language]}" ItemsSource="{Binding Languages}" 
+                        SelectedItem="{Binding SelectedLanguage, Mode=TwoWay}" VerticalOptions="Start"/>
+                    </ViewCell>
+                </TableSection>
+                <TableSection Title="{Binding Resources[DarkMode]}" TextColor="Black">
+                    <SwitchCell Text="{Binding Resources[DarkMode]}" On="{Binding IsDarkMode}"
+                                OnChanged="Switch_Toggled"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        
+    </ContentPage.Content>
+</ContentPage>
+<!--<StackLayout>
+    <Label Text="{Binding Resources[Language]}" Style="{DynamicResource labelStyle}" VerticalOptions="Start"/>
+    
+    <Label Text="{Binding Resources[DarkMode]}" Style="{DynamicResource labelStyle}" VerticalOptions="Start"/>
+    <Switch HorizontalOptions="Center" IsToggled="{Binding IsDarkMode}" Toggled="Switch_Toggled" VerticalOptions="Start"/>
+</StackLayout>-->
